@@ -1,0 +1,425 @@
+body {
+  background-color: gray;
+  font-family: "Roboto", arial;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+.clockFill {
+  width: 85vmin;
+  height: 85vmin;
+  border-radius: 50%;
+  border: 2px solid gray;
+  position: absolute;
+}
+
+.hourFill-0 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(90deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-1 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(93.6deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-2 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(97.2deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-3 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(100.8deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-4 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(104.4deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-5 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(108deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-6 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(111.6deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-7 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(115.2deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-8 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(118.8deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-9 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(122.4deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-10 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(126deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-11 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(129.6deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-12 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(133.2deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-13 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(136.8deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-14 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(140.4deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-15 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(144deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-16 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(147.6deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-17 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(151.2deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-18 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(154.8deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-19 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(158.4deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-20 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(162deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-21 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(165.6deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-22 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(169.2deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-23 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(172.8deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-24 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(176.4deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-25 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(180deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-26 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(183.6deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-27 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(187.2deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-28 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(190.8deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-29 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(194.4deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-30 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(198deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-31 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(201.6deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-32 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(205.2deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-33 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(208.8deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-34 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(212.4deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-35 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(216deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-36 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(219.6deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-37 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(223.2deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-38 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(226.8deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-39 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(230.4deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-40 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(234deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-41 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(237.6deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-42 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(241.2deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-43 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(244.8deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-44 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(248.4deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-45 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(252deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-46 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(255.6deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-47 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(259.2deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-48 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(262.8deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-49 {
+  background-image: linear-gradient(90deg, gray 50%, transparent 50%, transparent), linear-gradient(266.4deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-50 {
+  background-image: linear-gradient(-90deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-51 {
+  background-image: linear-gradient(-86.4deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-52 {
+  background-image: linear-gradient(-82.8deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-53 {
+  background-image: linear-gradient(-79.2deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-54 {
+  background-image: linear-gradient(-75.6deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-55 {
+  background-image: linear-gradient(-72deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-56 {
+  background-image: linear-gradient(-68.4deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-57 {
+  background-image: linear-gradient(-64.8deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-58 {
+  background-image: linear-gradient(-61.2deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-59 {
+  background-image: linear-gradient(-57.6deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-60 {
+  background-image: linear-gradient(-54deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-61 {
+  background-image: linear-gradient(-50.4deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-62 {
+  background-image: linear-gradient(-46.8deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-63 {
+  background-image: linear-gradient(-43.2deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-64 {
+  background-image: linear-gradient(-39.6deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-65 {
+  background-image: linear-gradient(-36deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-66 {
+  background-image: linear-gradient(-32.4deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-67 {
+  background-image: linear-gradient(-28.8deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-68 {
+  background-image: linear-gradient(-25.2deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-69 {
+  background-image: linear-gradient(-21.6deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-70 {
+  background-image: linear-gradient(-18deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-71 {
+  background-image: linear-gradient(-14.4deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-72 {
+  background-image: linear-gradient(-10.8deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-73 {
+  background-image: linear-gradient(-7.2deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-74 {
+  background-image: linear-gradient(-3.6deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-75 {
+  background-image: linear-gradient(0deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-76 {
+  background-image: linear-gradient(3.6deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-77 {
+  background-image: linear-gradient(7.2deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-78 {
+  background-image: linear-gradient(10.8deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-79 {
+  background-image: linear-gradient(14.4deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-80 {
+  background-image: linear-gradient(18deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-81 {
+  background-image: linear-gradient(21.6deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-82 {
+  background-image: linear-gradient(25.2deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-83 {
+  background-image: linear-gradient(28.8deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-84 {
+  background-image: linear-gradient(32.4deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-85 {
+  background-image: linear-gradient(36deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-86 {
+  background-image: linear-gradient(39.6deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-87 {
+  background-image: linear-gradient(43.2deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-88 {
+  background-image: linear-gradient(46.8deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-89 {
+  background-image: linear-gradient(50.4deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-90 {
+  background-image: linear-gradient(54deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-91 {
+  background-image: linear-gradient(57.6deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-92 {
+  background-image: linear-gradient(61.2deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-93 {
+  background-image: linear-gradient(64.8deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-94 {
+  background-image: linear-gradient(68.4deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-95 {
+  background-image: linear-gradient(72deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-96 {
+  background-image: linear-gradient(75.6deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-97 {
+  background-image: linear-gradient(79.2deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-98 {
+  background-image: linear-gradient(82.8deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-99 {
+  background-image: linear-gradient(86.4deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+.hourFill-100 {
+  background-image: linear-gradient(90deg, red 50%, transparent 50%, transparent), linear-gradient(270deg, red 50%, gray 50%, gray);
+}
+
+/*# sourceMappingURL=style.css.map */
