@@ -3,7 +3,7 @@ $(document).ready(function(){
 })
 
 function generateFramerate(){
-	window.setInterval(updateFrame, 864);//framerate = deciTime second
+	window.setInterval(updateFrame, 864);//framerate = decimal second
 }
 
 function updateFrame(){
@@ -33,7 +33,7 @@ function updateSeconds(){
 	var toRemove = Math.floor(ms / 100000);
 	var ms =      ms - (toRemove * 100000);
 
-	var seconds =    Math.floor(ms / 1000) * 10;
+	var seconds =    Math.floor(ms / 1000) * 10;//round to nearest decimal second
 	$(".secondFill").removeClass().addClass("clockFill secondFill secondFill-" + seconds);
 }
 
