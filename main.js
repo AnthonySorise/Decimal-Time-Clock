@@ -3,7 +3,7 @@ $(document).ready(function(){
 })
 
 function generateFramerate(){
-	window.setInterval(updateFrame, 16);//62.5fps
+	window.setInterval(updateFrame, 100);//62.5fps
 }
 
 function updateFrame(){
@@ -13,16 +13,28 @@ function updateFrame(){
 }
 
 function updateHours(){
-	var hour = Math.floor(getDeciMS() / 1000000);
-	$(".hourFill").removeClass().addClass("clockFill hourFill hourFill-" + hour);
+	var hourTimeTen = Math.floor(getDeciMS() / 1000000);
+	$(".hourFill").removeClass().addClass("clockFill hourFill hourFill-" + hourTimeTen);
 }
 
 function updateMinutes(){
+	//remove hours
+	var ms = getDeciMS();
+	var hour = Math.floor(ms / 10000000);
+	var ms =      ms - (hour * 10000000);
 
+	var minutes =    Math.floor(ms / 100000);
+	$(".minuteFill").removeClass().addClass("clockFill minuteFill minuteFill-" + minutes);
 }
 
 function updateSeconds(){
+	//remove hours and minutes
+	var ms = getDeciMS();
+	var minutes = Math.floor(ms / 100000);
+	var ms = ms - (minutes * 100000);
 
+	var seconds =    Math.floor(ms / 1000);
+	$(".secondFill").removeClass().addClass("clockFill secondFill secondFill-" + seconds);
 }
 
 function getDeciMS(){
