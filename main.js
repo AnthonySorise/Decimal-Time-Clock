@@ -3,7 +3,7 @@ $(document).ready(function(){
 })
 
 function generateFramerate(){
-	window.setInterval(updateFrame, 1000);//framerate = deciTime second
+	window.setInterval(updateFrame, 864);//framerate = deciTime second
 }
 
 function updateFrame(){
