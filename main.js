@@ -3,7 +3,7 @@ $(document).ready(function(){
 })
 
 function generateFramerate(){
-	window.setInterval(updateFrame, 100);//62.5fps
+	window.setInterval(updateFrame, 100);
 }
 
 function updateFrame(){
