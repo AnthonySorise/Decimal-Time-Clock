@@ -1,14 +1,12 @@
 //Colors
-$hourColor: red
-$minuteColor: white
-$secondColor: blue
-$backgroundColor: gray
-
+$hourColor:       #005b96
+$minuteColor:     #6497b1
+$secondColor:     #b3cde0
+$backgroundColor: #011f4b
 
 //CSS
 body
   background-color: $backgroundColor
-  font-family: "Roboto", arial
 
 #container
   display: flex
@@ -17,21 +15,46 @@ body
   height: 97vh
 
 .clockFill
-  width: 85vmin
-  height: 85vmin
+
   border-radius: 50%
-  border: 2px solid $backgroundColor
+  border: 4px solid $backgroundColor
   position: absolute
+
+.clockFill.hourFill
+  width: 80vmin
+  height: 80vmin
+
+.clockFill.minuteFill
+  width: 50vmin
+  height: 50vmin
+
+.clockFill.secondFill
+  width: 20vmin
+  height: 20vmin
 
 
 //Mixins
-$second: 360 / 100
+$unit: 360 / 100
 
 @for $i from 0 through 100
   .hourFill-#{$i}
     @if $i < 50
-      $nextdeg: 90deg + ($second * $i)
+      $nextdeg: 90deg + ($unit * $i)
       background-image: linear-gradient(90deg, $backgroundColor 50%, transparent 50%, transparent), linear-gradient($nextdeg, $hourColor 50%, $backgroundColor 50%, $backgroundColor)
     @else
-      $nextdeg: -90deg + ($second * ($i - 50))
+      $nextdeg: -90deg + ($unit * ($i - 50))
       background-image: linear-gradient($nextdeg, $hourColor 50%, transparent 50%, transparent), linear-gradient(270deg, $hourColor 50%, $backgroundColor 50%, $backgroundColor)
+  .minuteFill-#{$i}
+      @if $i < 50
+        $nextdeg: 90deg + ($unit * $i)
+        background-image: linear-gradient(90deg, $backgroundColor 50%, transparent 50%, transparent), linear-gradient($nextdeg, $minuteColor 50%, $backgroundColor 50%, $backgroundColor)
+      @else
+        $nextdeg: -90deg + ($unit * ($i - 50))
+        background-image: linear-gradient($nextdeg, $minuteColor 50%, transparent 50%, transparent), linear-gradient(270deg, $minuteColor 50%, $backgroundColor 50%, $backgroundColor)
+  .secondFill-#{$i}
+      @if $i < 50
+        $nextdeg: 90deg + ($unit * $i)
+        background-image: linear-gradient(90deg, $backgroundColor 50%, transparent 50%, transparent), linear-gradient($nextdeg, $secondColor 50%, $backgroundColor 50%, $backgroundColor)
+      @else
+        $nextdeg: -90deg + ($unit * ($i - 50))
+        background-image: linear-gradient($nextdeg, $secondColor 50%, transparent 50%, transparent), linear-gradient(270deg, $secondColor 50%, $backgroundColor 50%, $backgroundColor)
