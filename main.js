@@ -3,37 +3,37 @@ $(document).ready(function(){
 })
 
 function generateFramerate(){
-	window.setInterval(updateFrame, 100);
+	window.setInterval(updateFrame, 1000);//framerate = deciTime second
 }
 
 function updateFrame(){
-	updateHours();
-	updateMinutes();
-	updateSeconds();
+		updateHours();
+		updateMinutes();
+		updateSeconds();
 }
 
 function updateHours(){
-	var hourTimeTen = Math.floor(getDeciMS() / 1000000);
+	var hourTimeTen = Math.floor(getDeciMS() / 100000);
 	$(".hourFill").removeClass().addClass("clockFill hourFill hourFill-" + hourTimeTen);
 }
 
 function updateMinutes(){
 	//remove hours
 	var ms = getDeciMS();
-	var hour = Math.floor(ms / 10000000);
-	var ms =      ms - (hour * 10000000);
+	var toRemove = Math.floor(ms / 10000000);
+	var ms =      ms - (toRemove * 10000000);
 
-	var minutes =    Math.floor(ms / 100000);
+	var minutes =    Math.floor(ms / 10000);
 	$(".minuteFill").removeClass().addClass("clockFill minuteFill minuteFill-" + minutes);
 }
 
 function updateSeconds(){
 	//remove hours and minutes
 	var ms = getDeciMS();
-	var minutes = Math.floor(ms / 100000);
-	var ms = ms - (minutes * 100000);
+	var toRemove = Math.floor(ms / 100000);
+	var ms =      ms - (toRemove * 100000);
 
-	var seconds =    Math.floor(ms / 1000);
+	var seconds =    Math.floor(ms / 100);
 	$(".secondFill").removeClass().addClass("clockFill secondFill secondFill-" + seconds);
 }
 
