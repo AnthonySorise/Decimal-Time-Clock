@@ -33,7 +33,7 @@ function updateSeconds(){
 	var toRemove = Math.floor(ms / 100000);
 	var ms =      ms - (toRemove * 100000);
 
-	var seconds =    Math.floor(ms / 100);
+	var seconds =    Math.floor(ms / 1000) * 10;
 	$(".secondFill").removeClass().addClass("clockFill secondFill secondFill-" + seconds);
 }
 
