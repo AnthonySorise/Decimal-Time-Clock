@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	generateFramerate();
-	$(".clockNum").show();
 })
 
 function generateFramerate(){
@@ -12,6 +11,12 @@ function updateFrame(){
 		updateHours();
 		updateMinutes();
 		updateSeconds();
+}
+
+function getDeciMS(){
+	var date = new Date();
+    var regMS = date.getTime() - date.setHours(0,0,0,0);
+    return regMS * 1.1574;// 100,000 decimal seconds / 86,400 standard seconds
 }
 
 function updateHours(){
@@ -37,10 +42,4 @@ function updateSeconds(){
 
 	var seconds =    Math.floor(ms / 1000) * 10;//round to nearest decimal second
 	$(".secondFill").removeClass().addClass("clockFill secondFill secondFill-" + seconds);
-}
-
-function getDeciMS(){
-	var date = new Date();
-    var regMS = date.getTime() - date.setHours(0,0,0,0);
-    return regMS * 1.1574;// 100,000 decimal seconds / 86,400 standard seconds
 }

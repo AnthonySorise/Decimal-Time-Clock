@@ -2,17 +2,18 @@
 $hourColor:       #005b96
 $minuteColor:     #6497b1
 $secondColor:     #b3cde0
-$numColor:        black
+$numColor:        #b3cde0
 $backgroundColor: #011f4b
+
 
 //CSS
 body
   background-color: $backgroundColor
-//  background image used for testing
-//  background-image: url(background.png)
-//  background-repeat: no-repeat
-//  background-size: 85%
-//  background-position: center
+//background image used for testing
+//background-image: url(background.png)
+//background-repeat: no-repeat
+//background-size: 85%
+//background-position: center
 
 #container
   display: flex
@@ -44,7 +45,6 @@ body
   height: 3vmin
   position: relative
   border-radius: 50%
-  display: none
 
 .clockNum.clockNum-1
   top: -28.75vmin
@@ -103,10 +103,11 @@ $unit: 360 / 1000
       @else
         $nextdeg: -90deg + ($unit * ($i - 500))
         background-image: linear-gradient($nextdeg, $minuteColor 50%, transparent 50%, transparent), linear-gradient(270deg, $minuteColor 50%, $backgroundColor 50%, $backgroundColor)
-  .secondFill-#{$i}
-      @if $i < 500
-        $nextdeg: 90deg + ($unit * $i)
-        background-image: linear-gradient(90deg, $backgroundColor 50%, transparent 50%, transparent), linear-gradient($nextdeg, $secondColor 50%, $backgroundColor 50%, $backgroundColor)
-      @else
-        $nextdeg: -90deg + ($unit * ($i - 500))
-        background-image: linear-gradient($nextdeg, $secondColor 50%, transparent 50%, transparent), linear-gradient(270deg, $secondColor 50%, $backgroundColor 50%, $backgroundColor)
+  @if $i % 10 == 0
+    .secondFill-#{$i}
+        @if $i < 500
+          $nextdeg: 90deg + ($unit * $i)
+          background-image: linear-gradient(90deg, $backgroundColor 50%, transparent 50%, transparent), linear-gradient($nextdeg, $secondColor 50%, $backgroundColor 50%, $backgroundColor)
+        @else
+          $nextdeg: -90deg + ($unit * ($i - 500))
+          background-image: linear-gradient($nextdeg, $secondColor 50%, transparent 50%, transparent), linear-gradient(270deg, $secondColor 50%, $backgroundColor 50%, $backgroundColor)
