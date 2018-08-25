@@ -20,8 +20,8 @@ function getDeciMS(){
 }
 
 function updateHours(){
-	var hourTimeTen = Math.floor(getDeciMS() / 100000);
-	$(".hourFill").removeClass().addClass("clockFill hourFill hourFill-" + hourTimeTen);
+	var hourTimesTen = Math.floor(getDeciMS() / 100000);
+	$(".hourFill").removeClass().addClass("clockFill hourFill hourFill-" + hourTimesTen);
 }
 
 function updateMinutes(){
@@ -30,8 +30,8 @@ function updateMinutes(){
 	var toRemove = Math.floor(ms / 10000000);
 	var ms =      ms - (toRemove * 10000000);
 
-	var minutes =    Math.floor(ms / 10000);
-	$(".minuteFill").removeClass().addClass("clockFill minuteFill minuteFill-" + minutes);
+	var minutesTimesTen =    Math.floor(ms / 10000);
+	$(".minuteFill").removeClass().addClass("clockFill minuteFill minuteFill-" + minutesTimesTen);
 }
 
 function updateSeconds(){
@@ -41,5 +41,5 @@ function updateSeconds(){
 	var ms =      ms - (toRemove * 100000);
 
 	var seconds =    Math.floor(ms / 1000) * 10;//round to nearest decimal second
-	$(".secondFill").removeClass().addClass("clockFill secondFill secondFill-" + seconds);
+	$(".secondFill").removeClass().addClass("clockFill secondFill fadeOut secondFill-" + seconds);
 }
