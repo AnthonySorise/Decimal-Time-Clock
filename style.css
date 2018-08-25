@@ -37,6 +37,7 @@ body {
   height: 3vmin;
   position: relative;
   border-radius: 50%;
+  display: none;
 }
 
 .clockNum.clockNum-1 {

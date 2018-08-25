@@ -1,8 +1,10 @@
 $(document).ready(function(){
 	generateFramerate();
+	$(".clockNum").show();
 })
 
 function generateFramerate(){
+	updateFrame();
 	window.setInterval(updateFrame, 864);//framerate = decimal second
 }
 
