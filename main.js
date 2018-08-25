@@ -41,5 +41,5 @@ function updateSeconds(){
 	var ms =      ms - (toRemove * 100000);
 
 	var seconds =    Math.floor(ms / 1000) * 10;//round to nearest decimal second
-	$(".secondFill").removeClass().addClass("clockFill secondFill fadeOut secondFill-" + seconds);
+	$(".secondFill").removeClass().addClass("clockFill secondFill secondFill-" + seconds);
 }
