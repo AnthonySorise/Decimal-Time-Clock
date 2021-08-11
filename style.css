@@ -8,6 +8,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 97vh;
+  transform: scaleX(-1) scaleY(-1);
 }
 
 .clockFill {
